@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_2c44d872",
+        "filename": "init/init_moto_msm8960.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-03-04T09:37:47Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be ro.cdma.subscription? Also in line 139",
+      "revId": "33ffdd5e24e9b70cf17a2734163aa830542049fd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
