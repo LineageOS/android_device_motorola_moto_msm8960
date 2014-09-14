@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_023d402b",
+        "filename": "device-proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2014-09-14T12:13:28Z",
+      "side": 1,
+      "message": "You should use camera.vendor.msm8960.so to get rid of the DISABLE_HW_ID_MATCH_CHECK hack. Example: http://review.cyanogenmod.org/69738",
+      "revId": "48a5872d3fe0beb9a77134c02e615656b4ed2629",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
