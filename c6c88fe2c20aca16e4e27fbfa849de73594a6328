@@ -1,0 +1,565 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab6814e_a4675a24",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "android L already has a global restorecon_recursive /data in init.rc. This isn\u0027t needed.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_046d8604",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_e47162e2",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 188,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_44778ed4",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 192,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "not needed",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_24740ace",
+        "filename": "rootdir/etc/init.qcom.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 445,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "not needed (here and next line)",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_84817692",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "not needed. But even if it was needed, this should be in \"on post-fs-data\", not here. /data isn\u0027t guaranteed to be mounted by this point.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_647e12b0",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 624,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "/init.mmi.boot.sh should be moved to /system/bin, assigned a proper selinux label, and executed directly instead of indirectly via /system/bin/sh",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_a44e3a94",
+        "filename": "rootdir/etc/init.target.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 630,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "/init.mmi.touch.sh should be moved to /system/bin, assigned a proper selinux label, and executed directly instead of indirectly via /system/bin/sh",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_04446672",
+        "filename": "sepolicy/atvc_core.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "unconfined_domain is deprecated and will be going away in a future Android release. Please don\u0027t use this. (also line 11)",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_043bc6ec",
+        "filename": "sepolicy/batt_health.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "recommend r_file_perms (defined in external/sepolicy/global_macros) instead of listing out permission individually. More robust that way.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_e43fa2d4",
+        "filename": "sepolicy/batt_health.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "sysfs refers to every file in /sys which doesn\u0027t have a more specific label. That\u0027s an overly broad grant. Recommend creating a new label and having a more restricted grant.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_4425cec0",
+        "filename": "sepolicy/batt_health.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "system_data_file refers to every file on /data which doesn\u0027t have a more specific label. That\u0027s an overly broad grant. Recommend creating a new label and having a more restrictive grant.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_24224aba",
+        "filename": "sepolicy/bootmodem.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "recommend not using unconfined_domain. Deprecated and overly permissive.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_642c52ac",
+        "filename": "sepolicy/hw_revs.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "rw_file_perms. More robust.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_c417fe52",
+        "filename": "sepolicy/hw_revs.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "system_data_file is overly permissive",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_a41c7a78",
+        "filename": "sepolicy/hw_revs.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "rx_file_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_0412a662",
+        "filename": "sepolicy/init_shell.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "init_shell has been deleted in AOSP (https://android-review.googlesource.com/111620). You probably want to use a better defined domain for this.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_e4168254",
+        "filename": "sepolicy/keystore.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "r_file_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_440cae42",
+        "filename": "sepolicy/location.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "overly broad grant. Recommend more specific grant.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_8406961e",
+        "filename": "sepolicy/mm-qcamerad.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "rw_file_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_6403b210",
+        "filename": "sepolicy/mm-qcamerad.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "You are connecting to the property socket, but not actually setting any properties. Either this and line 9 needs to be deleted, or there needs to be allow rules for the properties which are set.\n\nIf you are going to keep lines 8-9, you should write it as:\n\n  unix_property_connect(mm-qcamerad, property, init)\n\nand delete the existing lines 8-9",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_bffe4303",
+        "filename": "sepolicy/mpdecision.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "overly broad grant",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_ff08cb2a",
+        "filename": "sepolicy/qdumpd.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "overly broad",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_9f037f0d",
+        "filename": "sepolicy/qrngd.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "overly broad.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_3f13735e",
+        "filename": "sepolicy/rmt_storage.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "rw_file_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_1f102f4e",
+        "filename": "sepolicy/sensors.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "r_file_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_7f1dfb65",
+        "filename": "sepolicy/sensors.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "r_dir_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_5f1ab76f",
+        "filename": "sepolicy/surfaceflinger.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "rw_file_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_bf25a3af",
+        "filename": "sepolicy/sysinit.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "overly broad",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_9f2a5f7d",
+        "filename": "sepolicy/thermald.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "r_dir_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_ff1f2b59",
+        "filename": "sepolicy/thermald.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "rw_file_perms",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_df24e7b0",
+        "filename": "sepolicy/time_daemon.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "system_data_file is an overly broad grant.",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_3f3a53ce",
+        "filename": "sepolicy/whisperd.te",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-24T20:17:16Z",
+      "side": 1,
+      "message": "overly broad grant",
+      "revId": "c6c88fe2c20aca16e4e27fbfa849de73594a6328",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
