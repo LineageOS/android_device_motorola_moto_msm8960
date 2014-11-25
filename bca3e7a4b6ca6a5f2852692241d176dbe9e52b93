@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab6814e_9f7d3fea",
+        "filename": "sepolicy/atvc_core.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "by convention, rules for an SELinux domain foo go in foo.te. Recommend creating \"atvc.te\" and putting atvc specific rules there.",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_bf7803fa",
+        "filename": "sepolicy/atvc_core.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "you\u0027ve granted atvc the ability to set this property, but it doesn\u0027t have the ability to connect to the property service. Only atvc_core has the ability to connect to the property service (lines 10-11). Bug?",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_7f205bf8",
+        "filename": "sepolicy/atvc_core.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "lines 10-11 can be replaced by:\n\n  unix_socket_connect(atvc_core, property, init)",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_df87c7d5",
+        "filename": "sepolicy/file.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "Since this is on /data, it should also have data_file_type\n\ntype batt_health_data_file, file_type, data_file_type;",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_3f6d3333",
+        "filename": "sepolicy/file.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "also data_file_type",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_1f6aef1a",
+        "filename": "sepolicy/file.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "by convention, any dev_type entries go in device.te, not file.te",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_5f7477fc",
+        "filename": "sepolicy/hw_revs.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "hw_revs has the ability to set a property, but it can\u0027t connect to the property service. Bug?\n\nEither this line needs to be deleted, or \n\n  unix_socket_connect(hw_revs, property, init)\n\nadded",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_bf5f6374",
+        "filename": "sepolicy/mm-pp-daemon.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "This looks like an improperly labeled SELinux domain. Does\n\n  adb shell dmesg | grep \"needs a SELinux domain defined\"\n\nreturn anything?",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_9f641f4a",
+        "filename": "sepolicy/mmi-boot-sh.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "Using default_prop isn\u0027t recommended. In a future version of Android, this will be a compile time error (https://android-review.googlesource.com/105260). \n\nInstead, you should create a label for the property.",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_ff59eb8f",
+        "filename": "sepolicy/mmi-boot-sh.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "lines 10-11 can be replaced with:\n\n  unix_socket_connect(mmi-boot-sh, property, init)",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_df5ea775",
+        "filename": "sepolicy/shell.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "this is an odd rule. Does the adb shell user really execute code from the camera device node in /dev? I\u0027ve only ever seen this kind of thing happen on the GPU device, and even then only rarely...\n\nI suspect this rule isn\u0027t needed.",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_3f541353",
+        "filename": "sepolicy/whisperd.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "whisperd can set properties, but doesn\u0027t have the ability to connect to the property service. Bug?",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_1f514f63",
+        "filename": "sepolicy/whisperd.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2975
+      },
+      "writtenOn": "2014-11-25T05:29:17Z",
+      "side": 1,
+      "message": "use of default_prop.",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
