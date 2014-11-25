@@ -138,6 +138,24 @@
     },
     {
       "key": {
+        "uuid": "bab6814e_8a205ff9",
+        "filename": "sepolicy/mm-pp-daemon.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2014-11-25T12:01:08Z",
+      "side": 1,
+      "message": "The main domain is defined in device/qcom/sepolicy. This is just one additional allow needed on this device.",
+      "parentUuid": "bab6814e_bf5f6374",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bab6814e_9f641f4a",
         "filename": "sepolicy/mmi-boot-sh.te",
         "patchSetId": 6
@@ -149,6 +167,24 @@
       "writtenOn": "2014-11-25T05:29:17Z",
       "side": 1,
       "message": "Using default_prop isn\u0027t recommended. In a future version of Android, this will be a compile time error (https://android-review.googlesource.com/105260). \n\nInstead, you should create a label for the property.",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_aa7d63e9",
+        "filename": "sepolicy/mmi-boot-sh.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2014-11-25T12:01:08Z",
+      "side": 1,
+      "message": "Yeah I started to define it. I will tonight it\u0027s setting ro.manufacturer",
+      "parentUuid": "bab6814e_9f641f4a",
       "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
@@ -189,6 +225,24 @@
     },
     {
       "key": {
+        "uuid": "bab6814e_0a83cfcd",
+        "filename": "sepolicy/shell.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2014-11-25T12:01:08Z",
+      "side": 1,
+      "message": "I\u0027ll remove and see if it pops up again.",
+      "parentUuid": "bab6814e_df5ea775",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bab6814e_3f541353",
         "filename": "sepolicy/whisperd.te",
         "patchSetId": 6
@@ -200,6 +254,24 @@
       "writtenOn": "2014-11-25T05:29:17Z",
       "side": 1,
       "message": "whisperd can set properties, but doesn\u0027t have the ability to connect to the property service. Bug?",
+      "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_ea876bd5",
+        "filename": "sepolicy/whisperd.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2014-11-25T12:01:08Z",
+      "side": 1,
+      "message": "Not sure what to make of this. I don\u0027t get the denial when adding this. It may be due to using toolbox?",
+      "parentUuid": "bab6814e_3f541353",
       "revId": "bca3e7a4b6ca6a5f2852692241d176dbe9e52b93",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
